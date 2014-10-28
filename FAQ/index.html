@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+				<meta charset="utf-8">
+				<title>嵊灿问答</title>
+				<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+				<link rel="stylesheet" type="text/css" href="css/main.css">
+				<script type="text/javascript" src="libs/angular.min.js"></script>
+				<script type="text/javascript" src="libs/angular-animate.min.js"></script>
+				<script type="text/javascript" src="js/controller.js"></script>
+				<script type="text/javascript" src="js/directives.js"></script>
+		</head>
+		<body ng-app="faqApp">
+			<nav class="navbar navbar-inverse " role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="" class="navbar-brand"> 嵊灿问答 </a>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid" ng-controller="FaqCtrl">
+			<div class="row">
+				<div ng-class="{'col-md-1': !card.turned, 'col-md-12': card.turned}" ng-hide="card.hide" class="card" ng-repeat="card in cards" ng-init="card.index = $index+1">
+					<faq-card card-click="turnBack(card)" card="card">
+						<button type="button" class="close" ng-click="closeTabs(card)"><span>×</span></button>
+						<faq-tabs tablist="tabs[$index]"></faq-tabs>
+					</faq-card>
+				</div>
+ 			</div>
+
+		</div>
+
+	</body>
+</html>
