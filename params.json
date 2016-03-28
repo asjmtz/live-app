@@ -1,0 +1,6 @@
+{
+  "name": "Live-app",
+  "tagline": "some live apps",
+  "body": "## Live preview for live-app project \r\n\r\n### [FAQ](http://iamtutu.com/live-app/FAQ/) \r\n\r\nFAQ cards with fliping effect using Angular \r\n\r\n### [hammer](http://iamtutu.com/live-app/hammer/) \r\n\r\nA mobile invitation using Hammer.js",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
